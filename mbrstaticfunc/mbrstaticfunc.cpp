@@ -30,3 +30,19 @@ void mahasiswa::printALL() {
 	cout << endl;
 }
 
+int main() {
+	mahasiswa mhs1("sri dadi");
+	mahasiswa mhs2("budi jatmiko");
+	mahasiswa::setNim(9);
+	mahasiswa mhs3("andi janu");
+	mahasiswa mhs4("jako wahono");
+
+	mhs1.printALL();
+	mhs2.printALL();
+	mhs3.printALL();
+	mhs4.printALL();
+
+	cout << "akses dari luar object =" << mahasiswa::getNim() << endl;
+
+	return 0;
+}
